@@ -88,3 +88,31 @@ load:0x403c9700,len:0xbf4
 load:0x403cc700,len:0x2da8
 entry 0x403c9904
 ```
+
+
+// POLLING
+| Task | Run Time | Percentage
+| data-handler | 38145 | 1%
+| stats | 1298 | 0%
+| main | 13 | 0%
+| IDLE | 961855 | 48%
+| IDLE | 997038 | 49%
+| int-gen | 1651 | 0%
+| esp_timer | 0 | 0%
+| ipc1 | 0 | 0%
+| ipc0 | 0 | 0%
+Real time stats obtained
+
+// NOT POLLING
+| Task | Run Time | Percentage
+| stats | 1244 | 0%
+| main | 12 | 0%
+| IDLE | 998493 | 49%
+| IDLE | 996344 | 49%
+| int-gen | 1700 | 0%
+| ipc0 | 0 | 0%
+| data-handler | 2207 | 0%
+| esp_timer | 0 | 0%
+| ipc1 | 0 | 0%
+
+// NOT ACQUIRING
